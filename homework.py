@@ -37,9 +37,10 @@ def multiple_ints_with_conversion(a: Any, b: Any) -> int:
 
     return int(a)*int(b)
 
-def is_word_in_text(Ta: str, Tatka: str) -> bool:
 
-    return Ta in Tatka
+def is_word_in_text(ta: str, tatka: str) -> bool:
+
+    return ta in tatka
 
 
 def some_loop_exercise() -> list:
@@ -59,7 +60,9 @@ def remove_from_list_all_negative_numbers(num_list: List[int]) -> list:
             r.remove(i)
     return r
 
+
 def alphabet() -> dict:
+
     #1
     #return {k: v for k, v in zip(range(1, len(string.ascii_lowercase) + 1), string.ascii_lowercase)}
 
@@ -78,12 +81,13 @@ def simple_sort(listok: List[int]) -> List[list]:
     #listok.sort()
     #return listok
 
+
     #2:
-            #l2 = new_list
+            #l_2 = new_list
             # r+=1 =  r = r+1
 
 
-    """l2 = []                   
+    """l_2 = []
     lenght = len(listok)
     r = 0
     while r < lenght:
@@ -91,11 +95,12 @@ def simple_sort(listok: List[int]) -> List[list]:
         l2.append(x)
         listok.remove(x)
         r +=1
-    return l2"""
+    return l_2"""
+
 
     #3:
 
-    l2 = []
+    l_2 = []
     while len(listok) > 0:
         sp = None
         for r in listok:
@@ -104,6 +109,6 @@ def simple_sort(listok: List[int]) -> List[list]:
             else:
                 if r < sp:
                     sp = r
-        l2.append(sp)
+        l_2.append(sp)
         listok.remove(sp)
-    return l2
+    return l_2
