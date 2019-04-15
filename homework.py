@@ -22,7 +22,6 @@ def is_two_objects_has_same_type(a: Any, b: Any) -> bool:
 def is_two_objects_is_the_same_objects(a: Any, b: Any) -> bool:
 
     return a is b
-    # is==id()
 
 
 def multiple_ints(a: int, b: int) -> int:
@@ -63,10 +62,13 @@ def remove_from_list_all_negative_numbers(num_list: List[int]) -> list:
 
 def alphabet() -> dict:
 
-    #1
+    #1:
+
     #return {k: v for k, v in zip(range(1, len(string.ascii_lowercase) + 1), string.ascii_lowercase)}
 
-    #2
+
+    #2:
+
     my_dict = {}
     letter = string.ascii_lowercase
     for number in range(1,27):
@@ -83,9 +85,6 @@ def simple_sort(listok: List[int]) -> List[list]:
 
 
     #2:
-            #l_2 = new_list
-            # r+=1 =  r = r+1
-
 
     """l_2 = []
     lenght = len(listok)
